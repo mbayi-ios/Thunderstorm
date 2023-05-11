@@ -21,7 +21,7 @@ extension Location {
     static var preview: Location {
         previews[0]
     }
-    
+
     static var previews: [Location] {
         [
             .init(id: "1", name: "Paris", country: "France", latitude: 48.857438, longitude: 2.29587),

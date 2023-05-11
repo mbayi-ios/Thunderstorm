@@ -19,7 +19,9 @@ struct LocationsView: View {
                        LocationCell(viewModel: viewModel)
                     }
                 }
+                .padding()
             }
+            .navigationTitle("Thunderstorm")
         }
 
 
