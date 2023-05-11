@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LocationsView: View {
 
-    private let viewModel = LocationsViewModel()
+    let viewModel: LocationsViewModel
 
     var body: some View {
         NavigationView {
@@ -23,6 +23,6 @@ struct LocationsView: View {
 
 struct LocationsView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationsView()
+        LocationsView(viewModel: .init())
     }
 }

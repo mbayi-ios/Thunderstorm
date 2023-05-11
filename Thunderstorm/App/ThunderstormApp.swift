@@ -11,7 +11,7 @@ import SwiftUI
 struct ThunderstormApp: App {
     var body: some Scene {
         WindowGroup {
-            LocationsView()
+            LocationsView(viewModel: .init())
         }
     }
 }
