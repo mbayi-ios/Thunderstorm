@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		895CFC402A0D72BC00B0499B /* ThunderstormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC3F2A0D72BC00B0499B /* ThunderstormApp.swift */; };
-		895CFC422A0D72BC00B0499B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC412A0D72BC00B0499B /* ContentView.swift */; };
 		895CFC442A0D72BD00B0499B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895CFC432A0D72BD00B0499B /* Assets.xcassets */; };
 		895CFC472A0D72BD00B0499B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895CFC462A0D72BD00B0499B /* Preview Assets.xcassets */; };
+		895CFC542A0D74CF00B0499B /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC532A0D74CF00B0499B /* LocationsView.swift */; };
+		895CFC572A0D756600B0499B /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC562A0D756600B0499B /* LocationsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		895CFC3C2A0D72BC00B0499B /* Thunderstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunderstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		895CFC3F2A0D72BC00B0499B /* ThunderstormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderstormApp.swift; sourceTree = "<group>"; };
-		895CFC412A0D72BC00B0499B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		895CFC432A0D72BD00B0499B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		895CFC462A0D72BD00B0499B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		895CFC532A0D74CF00B0499B /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		895CFC562A0D756600B0499B /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,7 @@
 		895CFC4E2A0D72DE00B0499B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				895CFC412A0D72BC00B0499B /* ContentView.swift */,
+				895CFC522A0D74BB00B0499B /* Locations */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +91,23 @@
 				895CFC3F2A0D72BC00B0499B /* ThunderstormApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		895CFC522A0D74BB00B0499B /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				895CFC552A0D754F00B0499B /* View Models */,
+				895CFC532A0D74CF00B0499B /* LocationsView.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		895CFC552A0D754F00B0499B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				895CFC562A0D756600B0499B /* LocationsViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				895CFC422A0D72BC00B0499B /* ContentView.swift in Sources */,
+				895CFC542A0D74CF00B0499B /* LocationsView.swift in Sources */,
 				895CFC402A0D72BC00B0499B /* ThunderstormApp.swift in Sources */,
+				895CFC572A0D756600B0499B /* LocationsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
