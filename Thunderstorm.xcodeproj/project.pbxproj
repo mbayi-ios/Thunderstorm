@@ -14,6 +14,7 @@
 		895CFC572A0D756600B0499B /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC562A0D756600B0499B /* LocationsViewModel.swift */; };
 		895CFC5A2A0D7A9300B0499B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC592A0D7A9300B0499B /* Location.swift */; };
 		895CFC5C2A0D80C400B0499B /* LocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC5B2A0D80C400B0499B /* LocationCellViewModel.swift */; };
+		895CFC5E2A0D858000B0499B /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC5D2A0D858000B0499B /* LocationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		895CFC562A0D756600B0499B /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		895CFC592A0D7A9300B0499B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		895CFC5B2A0D80C400B0499B /* LocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellViewModel.swift; sourceTree = "<group>"; };
+		895CFC5D2A0D858000B0499B /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				895CFC552A0D754F00B0499B /* View Models */,
 				895CFC532A0D74CF00B0499B /* LocationsView.swift */,
+				895CFC5D2A0D858000B0499B /* LocationCell.swift */,
 			);
 			path = Locations;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895CFC5E2A0D858000B0499B /* LocationCell.swift in Sources */,
 				895CFC542A0D74CF00B0499B /* LocationsView.swift in Sources */,
 				895CFC402A0D72BC00B0499B /* ThunderstormApp.swift in Sources */,
 				895CFC5A2A0D7A9300B0499B /* Location.swift in Sources */,
