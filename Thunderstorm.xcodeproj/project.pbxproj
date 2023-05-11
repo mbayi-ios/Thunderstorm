@@ -51,9 +51,9 @@
 		895CFC3E2A0D72BC00B0499B /* Thunderstorm */ = {
 			isa = PBXGroup;
 			children = (
-				895CFC3F2A0D72BC00B0499B /* ThunderstormApp.swift */,
-				895CFC412A0D72BC00B0499B /* ContentView.swift */,
-				895CFC432A0D72BD00B0499B /* Assets.xcassets */,
+				895CFC512A0D730D00B0499B /* App */,
+				895CFC4E2A0D72DE00B0499B /* Views */,
+				895CFC4D2A0D72CA00B0499B /* Resources */,
 				895CFC452A0D72BD00B0499B /* Preview Content */,
 			);
 			path = Thunderstorm;
@@ -65,6 +65,30 @@
 				895CFC462A0D72BD00B0499B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		895CFC4D2A0D72CA00B0499B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				895CFC432A0D72BD00B0499B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		895CFC4E2A0D72DE00B0499B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				895CFC412A0D72BC00B0499B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		895CFC512A0D730D00B0499B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				895CFC3F2A0D72BC00B0499B /* ThunderstormApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
