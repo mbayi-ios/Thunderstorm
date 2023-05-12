@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct Location: Codable {
     let id: String
@@ -35,4 +36,22 @@ extension Location {
         try! JSONEncoder().encode(Location.previews)
     }
 
+}
+
+extension Location {
+    init?(placemark: CLPlacemark){
+        guard
+            let name = placemark.name,
+            let country = placemark.country,
+            let coordinate = placemark.location?.coordinate
+
+        else {
+            return nil
+        }
+        id = UUID().uuidString
+        self.name = name
+        self.country = country
+        latitude = coordinate.latitude
+        longitude = coordinate.longitude
+    }
 }

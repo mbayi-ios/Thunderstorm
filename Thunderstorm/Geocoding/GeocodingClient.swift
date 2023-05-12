@@ -14,18 +14,9 @@ final class GeocodingClient: GeocodingService {
             throw GeocodingError.invalidAddressString
         }
         do {
-            let placemarks = try await geocoder.geocodeAddressString(addressString)
-            return placemarks.compactMap { placemark -> Location? in
-                guard
-                    let name = placemark.name,
-                    let country = placemark.country,
-                    let coordinate = placemark.location?.coordinate
-
-                else {
-                    return nil
-                }
-                return Location(id: UUID().uuidString, name: name, country: country, latitude: coordinate.latitude, longitude: coordinate.longitude)
-            }
+            return try await geocoder
+                .geocodeAddressString(addressString)
+                .compactMap(Location.init(placemark:))
         } catch {
             print("unable to geocode address string \(error)")
             throw GeocodingError.requestFailed
