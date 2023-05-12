@@ -24,6 +24,8 @@
 		895CFC702A0E4AD100B0499B /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC6F2A0E4AD100B0499B /* ForecastCell.swift */; };
 		895CFC722A0E4AEF00B0499B /* ForecastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC712A0E4AEF00B0499B /* ForecastCellViewModel.swift */; };
 		895CFC742A0E537000B0499B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC732A0E537000B0499B /* Colors.swift */; };
+		89E8E1A02A0E95090044039A /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E19F2A0E95080044039A /* AddLocationView.swift */; };
+		89E8E1A42A0E95450044039A /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1A32A0E95450044039A /* AddLocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		895CFC6F2A0E4AD100B0499B /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		895CFC712A0E4AEF00B0499B /* ForecastCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCellViewModel.swift; sourceTree = "<group>"; };
 		895CFC732A0E537000B0499B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		89E8E19F2A0E95080044039A /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
+		89E8E1A32A0E95450044039A /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 		895CFC4E2A0D72DE00B0499B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				89E8E19E2A0E94A40044039A /* Add Location */,
 				895CFC5F2A0E2F9600B0499B /* Location */,
 				895CFC522A0D74BB00B0499B /* Locations */,
 			);
@@ -186,6 +191,31 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		89E8E19E2A0E94A40044039A /* Add Location */ = {
+			isa = PBXGroup;
+			children = (
+				89E8E1A22A0E952A0044039A /* View Models */,
+				89E8E1A12A0E95230044039A /* Views */,
+			);
+			path = "Add Location";
+			sourceTree = "<group>";
+		};
+		89E8E1A12A0E95230044039A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89E8E19F2A0E95080044039A /* AddLocationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89E8E1A22A0E952A0044039A /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				89E8E1A32A0E95450044039A /* AddLocationViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,12 +293,14 @@
 				895CFC5E2A0D858000B0499B /* LocationCell.swift in Sources */,
 				895CFC542A0D74CF00B0499B /* LocationsView.swift in Sources */,
 				895CFC402A0D72BC00B0499B /* ThunderstormApp.swift in Sources */,
+				89E8E1A42A0E95450044039A /* AddLocationViewModel.swift in Sources */,
 				895CFC5A2A0D7A9300B0499B /* Location.swift in Sources */,
 				895CFC612A0E2FA700B0499B /* LocationView.swift in Sources */,
 				895CFC572A0D756600B0499B /* LocationsViewModel.swift in Sources */,
 				895CFC722A0E4AEF00B0499B /* ForecastCellViewModel.swift in Sources */,
 				895CFC6E2A0E316600B0499B /* ForecastViewModel.swift in Sources */,
 				895CFC5C2A0D80C400B0499B /* LocationCellViewModel.swift in Sources */,
+				89E8E1A02A0E95090044039A /* AddLocationView.swift in Sources */,
 				895CFC702A0E4AD100B0499B /* ForecastCell.swift in Sources */,
 				895CFC642A0E2FF200B0499B /* LocationViewModel.swift in Sources */,
 			);
