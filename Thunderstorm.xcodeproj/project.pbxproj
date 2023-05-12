@@ -15,6 +15,12 @@
 		895CFC5A2A0D7A9300B0499B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC592A0D7A9300B0499B /* Location.swift */; };
 		895CFC5C2A0D80C400B0499B /* LocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC5B2A0D80C400B0499B /* LocationCellViewModel.swift */; };
 		895CFC5E2A0D858000B0499B /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC5D2A0D858000B0499B /* LocationCell.swift */; };
+		895CFC612A0E2FA700B0499B /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC602A0E2FA700B0499B /* LocationView.swift */; };
+		895CFC642A0E2FF200B0499B /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC632A0E2FF200B0499B /* LocationViewModel.swift */; };
+		895CFC682A0E30E200B0499B /* CurrentConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC672A0E30E200B0499B /* CurrentConditionsView.swift */; };
+		895CFC6A2A0E30FB00B0499B /* CurrentConditionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC692A0E30FB00B0499B /* CurrentConditionsViewModel.swift */; };
+		895CFC6C2A0E315700B0499B /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC6B2A0E315600B0499B /* ForecastView.swift */; };
+		895CFC6E2A0E316600B0499B /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC6D2A0E316600B0499B /* ForecastViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		895CFC592A0D7A9300B0499B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		895CFC5B2A0D80C400B0499B /* LocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellViewModel.swift; sourceTree = "<group>"; };
 		895CFC5D2A0D858000B0499B /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		895CFC602A0E2FA700B0499B /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		895CFC632A0E2FF200B0499B /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		895CFC672A0E30E200B0499B /* CurrentConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditionsView.swift; sourceTree = "<group>"; };
+		895CFC692A0E30FB00B0499B /* CurrentConditionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditionsViewModel.swift; sourceTree = "<group>"; };
+		895CFC6B2A0E315600B0499B /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		895CFC6D2A0E316600B0499B /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,7 @@
 		895CFC4E2A0D72DE00B0499B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				895CFC5F2A0E2F9600B0499B /* Location */,
 				895CFC522A0D74BB00B0499B /* Locations */,
 			);
 			path = Views;
@@ -103,9 +116,8 @@
 		895CFC522A0D74BB00B0499B /* Locations */ = {
 			isa = PBXGroup;
 			children = (
+				895CFC652A0E30B100B0499B /* Views */,
 				895CFC552A0D754F00B0499B /* View Models */,
-				895CFC532A0D74CF00B0499B /* LocationsView.swift */,
-				895CFC5D2A0D858000B0499B /* LocationCell.swift */,
 			);
 			path = Locations;
 			sourceTree = "<group>";
@@ -125,6 +137,44 @@
 				895CFC592A0D7A9300B0499B /* Location.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		895CFC5F2A0E2F9600B0499B /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				895CFC662A0E30BF00B0499B /* Views */,
+				895CFC622A0E2FD900B0499B /* View Models */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		895CFC622A0E2FD900B0499B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				895CFC632A0E2FF200B0499B /* LocationViewModel.swift */,
+				895CFC692A0E30FB00B0499B /* CurrentConditionsViewModel.swift */,
+				895CFC6D2A0E316600B0499B /* ForecastViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		895CFC652A0E30B100B0499B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				895CFC532A0D74CF00B0499B /* LocationsView.swift */,
+				895CFC5D2A0D858000B0499B /* LocationCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		895CFC662A0E30BF00B0499B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				895CFC602A0E2FA700B0499B /* LocationView.swift */,
+				895CFC672A0E30E200B0499B /* CurrentConditionsView.swift */,
+				895CFC6B2A0E315600B0499B /* ForecastView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,12 +247,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895CFC6A2A0E30FB00B0499B /* CurrentConditionsViewModel.swift in Sources */,
+				895CFC682A0E30E200B0499B /* CurrentConditionsView.swift in Sources */,
+				895CFC6C2A0E315700B0499B /* ForecastView.swift in Sources */,
 				895CFC5E2A0D858000B0499B /* LocationCell.swift in Sources */,
 				895CFC542A0D74CF00B0499B /* LocationsView.swift in Sources */,
 				895CFC402A0D72BC00B0499B /* ThunderstormApp.swift in Sources */,
 				895CFC5A2A0D7A9300B0499B /* Location.swift in Sources */,
+				895CFC612A0E2FA700B0499B /* LocationView.swift in Sources */,
 				895CFC572A0D756600B0499B /* LocationsViewModel.swift in Sources */,
+				895CFC6E2A0E316600B0499B /* ForecastViewModel.swift in Sources */,
 				895CFC5C2A0D80C400B0499B /* LocationCellViewModel.swift in Sources */,
+				895CFC642A0E2FF200B0499B /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

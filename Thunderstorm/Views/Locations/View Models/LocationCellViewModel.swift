@@ -1,13 +1,10 @@
-//
-//  LocationCellViewModel.swift
-//  Thunderstorm
-//
-//  Created by Amby on 11/05/2023.
-//
-
 import Foundation
 struct LocationCellViewModel: Identifiable {
     private let location: Location
+
+    var locationViewModel: LocationViewModel {
+        .init(location: location)
+    }
 
     var id: String {
         location.id
