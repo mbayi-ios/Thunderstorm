@@ -31,6 +31,8 @@ struct AddLocationView: View {
 
 struct AddLocationView_Previews: PreviewProvider {
     static var previews: some View {
-        AddLocationView(viewModel: .init(), showsAddLocationView: .constant(true))
+        let viewModel = AddLocationViewModel(geocodingService: GeocodingPreviewClient())
+
+        AddLocationView(viewModel: viewModel, showsAddLocationView: .constant(true))
     }
 }
