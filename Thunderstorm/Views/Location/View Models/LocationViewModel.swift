@@ -14,4 +14,8 @@ struct LocationViewModel {
     var forecastViewModel: ForecastViewModel {
         .init()
     }
+
+    var locationName: String {
+        location.name
+    }
 }

@@ -21,6 +21,8 @@
 		895CFC6A2A0E30FB00B0499B /* CurrentConditionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC692A0E30FB00B0499B /* CurrentConditionsViewModel.swift */; };
 		895CFC6C2A0E315700B0499B /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC6B2A0E315600B0499B /* ForecastView.swift */; };
 		895CFC6E2A0E316600B0499B /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC6D2A0E316600B0499B /* ForecastViewModel.swift */; };
+		895CFC702A0E4AD100B0499B /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC6F2A0E4AD100B0499B /* ForecastCell.swift */; };
+		895CFC722A0E4AEF00B0499B /* ForecastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC712A0E4AEF00B0499B /* ForecastCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		895CFC692A0E30FB00B0499B /* CurrentConditionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditionsViewModel.swift; sourceTree = "<group>"; };
 		895CFC6B2A0E315600B0499B /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		895CFC6D2A0E316600B0499B /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		895CFC6F2A0E4AD100B0499B /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
+		895CFC712A0E4AEF00B0499B /* ForecastCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 				895CFC632A0E2FF200B0499B /* LocationViewModel.swift */,
 				895CFC692A0E30FB00B0499B /* CurrentConditionsViewModel.swift */,
 				895CFC6D2A0E316600B0499B /* ForecastViewModel.swift */,
+				895CFC712A0E4AEF00B0499B /* ForecastCellViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				895CFC602A0E2FA700B0499B /* LocationView.swift */,
 				895CFC672A0E30E200B0499B /* CurrentConditionsView.swift */,
 				895CFC6B2A0E315600B0499B /* ForecastView.swift */,
+				895CFC6F2A0E4AD100B0499B /* ForecastCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 				895CFC5A2A0D7A9300B0499B /* Location.swift in Sources */,
 				895CFC612A0E2FA700B0499B /* LocationView.swift in Sources */,
 				895CFC572A0D756600B0499B /* LocationsViewModel.swift in Sources */,
+				895CFC722A0E4AEF00B0499B /* ForecastCellViewModel.swift in Sources */,
 				895CFC6E2A0E316600B0499B /* ForecastViewModel.swift in Sources */,
 				895CFC5C2A0D80C400B0499B /* LocationCellViewModel.swift in Sources */,
+				895CFC702A0E4AD100B0499B /* ForecastCell.swift in Sources */,
 				895CFC642A0E2FF200B0499B /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
