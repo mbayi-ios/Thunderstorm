@@ -23,6 +23,7 @@
 		895CFC6E2A0E316600B0499B /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC6D2A0E316600B0499B /* ForecastViewModel.swift */; };
 		895CFC702A0E4AD100B0499B /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC6F2A0E4AD100B0499B /* ForecastCell.swift */; };
 		895CFC722A0E4AEF00B0499B /* ForecastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC712A0E4AEF00B0499B /* ForecastCellViewModel.swift */; };
+		895CFC742A0E537000B0499B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC732A0E537000B0499B /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		895CFC6D2A0E316600B0499B /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		895CFC6F2A0E4AD100B0499B /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		895CFC712A0E4AEF00B0499B /* ForecastCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCellViewModel.swift; sourceTree = "<group>"; };
+		895CFC732A0E537000B0499B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				895CFC432A0D72BD00B0499B /* Assets.xcassets */,
+				895CFC732A0E537000B0499B /* Colors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				895CFC6A2A0E30FB00B0499B /* CurrentConditionsViewModel.swift in Sources */,
+				895CFC742A0E537000B0499B /* Colors.swift in Sources */,
 				895CFC682A0E30E200B0499B /* CurrentConditionsView.swift in Sources */,
 				895CFC6C2A0E315700B0499B /* ForecastView.swift in Sources */,
 				895CFC5E2A0D858000B0499B /* LocationCell.swift in Sources */,
