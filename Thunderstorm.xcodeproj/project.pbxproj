@@ -28,6 +28,9 @@
 		89E8E1A42A0E95450044039A /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1A32A0E95450044039A /* AddLocationViewModel.swift */; };
 		89E8E1A62A0E9ED90044039A /* AddLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1A52A0E9ED90044039A /* AddLocationCell.swift */; };
 		89E8E1A82A0E9EF20044039A /* AddLocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1A72A0E9EF20044039A /* AddLocationCellViewModel.swift */; };
+		89E8E1AB2A0EAC790044039A /* GeocodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1AA2A0EAC790044039A /* GeocodingService.swift */; };
+		89E8E1AD2A0EACC70044039A /* GeocodingPreviewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1AC2A0EACC70044039A /* GeocodingPreviewClient.swift */; };
+		89E8E1AF2A0EAD090044039A /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1AE2A0EAD090044039A /* GeocodingClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		89E8E1A32A0E95450044039A /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
 		89E8E1A52A0E9ED90044039A /* AddLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCell.swift; sourceTree = "<group>"; };
 		89E8E1A72A0E9EF20044039A /* AddLocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCellViewModel.swift; sourceTree = "<group>"; };
+		89E8E1AA2A0EAC790044039A /* GeocodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingService.swift; sourceTree = "<group>"; };
+		89E8E1AC2A0EACC70044039A /* GeocodingPreviewClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingPreviewClient.swift; sourceTree = "<group>"; };
+		89E8E1AE2A0EAD090044039A /* GeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 		895CFC3E2A0D72BC00B0499B /* Thunderstorm */ = {
 			isa = PBXGroup;
 			children = (
+				89E8E1A92A0EAC6A0044039A /* Geocoding */,
 				895CFC582A0D7A8800B0499B /* Models */,
 				895CFC512A0D730D00B0499B /* App */,
 				895CFC4E2A0D72DE00B0499B /* Views */,
@@ -222,6 +229,16 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		89E8E1A92A0EAC6A0044039A /* Geocoding */ = {
+			isa = PBXGroup;
+			children = (
+				89E8E1AA2A0EAC790044039A /* GeocodingService.swift */,
+				89E8E1AC2A0EACC70044039A /* GeocodingPreviewClient.swift */,
+				89E8E1AE2A0EAD090044039A /* GeocodingClient.swift */,
+			);
+			path = Geocoding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E8E1A62A0E9ED90044039A /* AddLocationCell.swift in Sources */,
+				89E8E1AB2A0EAC790044039A /* GeocodingService.swift in Sources */,
 				895CFC6A2A0E30FB00B0499B /* CurrentConditionsViewModel.swift in Sources */,
 				89E8E1A82A0E9EF20044039A /* AddLocationCellViewModel.swift in Sources */,
 				895CFC742A0E537000B0499B /* Colors.swift in Sources */,
@@ -304,6 +322,8 @@
 				89E8E1A42A0E95450044039A /* AddLocationViewModel.swift in Sources */,
 				895CFC5A2A0D7A9300B0499B /* Location.swift in Sources */,
 				895CFC612A0E2FA700B0499B /* LocationView.swift in Sources */,
+				89E8E1AD2A0EACC70044039A /* GeocodingPreviewClient.swift in Sources */,
+				89E8E1AF2A0EAD090044039A /* GeocodingClient.swift in Sources */,
 				895CFC572A0D756600B0499B /* LocationsViewModel.swift in Sources */,
 				895CFC722A0E4AEF00B0499B /* ForecastCellViewModel.swift in Sources */,
 				895CFC6E2A0E316600B0499B /* ForecastViewModel.swift in Sources */,
