@@ -26,6 +26,8 @@
 		895CFC742A0E537000B0499B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CFC732A0E537000B0499B /* Colors.swift */; };
 		89E8E1A02A0E95090044039A /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E19F2A0E95080044039A /* AddLocationView.swift */; };
 		89E8E1A42A0E95450044039A /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1A32A0E95450044039A /* AddLocationViewModel.swift */; };
+		89E8E1A62A0E9ED90044039A /* AddLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1A52A0E9ED90044039A /* AddLocationCell.swift */; };
+		89E8E1A82A0E9EF20044039A /* AddLocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1A72A0E9EF20044039A /* AddLocationCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		895CFC732A0E537000B0499B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		89E8E19F2A0E95080044039A /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
 		89E8E1A32A0E95450044039A /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
+		89E8E1A52A0E9ED90044039A /* AddLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCell.swift; sourceTree = "<group>"; };
+		89E8E1A72A0E9EF20044039A /* AddLocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				89E8E19F2A0E95080044039A /* AddLocationView.swift */,
+				89E8E1A52A0E9ED90044039A /* AddLocationCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				89E8E1A32A0E95450044039A /* AddLocationViewModel.swift */,
+				89E8E1A72A0E9EF20044039A /* AddLocationCellViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -286,7 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E8E1A62A0E9ED90044039A /* AddLocationCell.swift in Sources */,
 				895CFC6A2A0E30FB00B0499B /* CurrentConditionsViewModel.swift in Sources */,
+				89E8E1A82A0E9EF20044039A /* AddLocationCellViewModel.swift in Sources */,
 				895CFC742A0E537000B0499B /* Colors.swift in Sources */,
 				895CFC682A0E30E200B0499B /* CurrentConditionsView.swift in Sources */,
 				895CFC6C2A0E315700B0499B /* ForecastView.swift in Sources */,

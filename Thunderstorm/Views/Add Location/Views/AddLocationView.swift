@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct AddLocationView: View {
-    let viewModel: AddLocationViewModel
+    @ObservedObject var viewModel: AddLocationViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextField(viewModel.textFieldPlaceholder, text: $viewModel.query)
+        }
     }
 }
 
