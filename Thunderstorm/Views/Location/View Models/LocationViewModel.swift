@@ -8,11 +8,11 @@ struct LocationViewModel {
     }
 
     var currentConditionsViewModel: CurrentConditionsViewModel {
-        .init()
+        .init(currently: WeatherData.preview.currently)
     }
 
     var forecastViewModel: ForecastViewModel {
-        .init()
+        .init(forecast: WeatherData.preview.forecast)
     }
 
     var locationName: String {

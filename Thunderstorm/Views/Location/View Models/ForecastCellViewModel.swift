@@ -9,7 +9,9 @@ import Foundation
 
 struct ForecastCellViewModel: Identifiable {
 
-    private let forecastDate: Date
+    private let dayConditions: WeatherData.DayConditions
+
+    private let measurementFormatter = ClearSkyFormatter()
 
     private let dateFormatter = DateFormatter()
 
@@ -17,41 +19,52 @@ struct ForecastCellViewModel: Identifiable {
         UUID()
     }
 
-    var lowTemperature: String{
-        let temperature = Int.random(in: 50...70)
-        return "\(temperature) °F"
-    }
-
-    var highTemperature: String{
-        let temperature = Int.random(in: 50...90)
-        return "\(temperature) °F"
-    }
-
-    init(forecastDate: Date) {
-        self.forecastDate = forecastDate
+    init(dayConditions: WeatherData.DayConditions) {
+        self.dayConditions = dayConditions
     }
 
     var day: String {
         dateFormatter.dateFormat = "EEEE"
-        return dateFormatter.string(from: forecastDate).capitalized
+        return dateFormatter.string(from: dayConditions.time).capitalized
     }
 
     var date: String{
         dateFormatter.dateFormat = "MMM d"
-        return dateFormatter.string(from: forecastDate).capitalized
+        return dateFormatter.string(from: dayConditions.time).capitalized
     }
 
     var summary: String {
-        "Clear"
-    }
-
-    var imageName: String {
-        "sun.max"
+        dayConditions.summary
     }
 
     var windSpeed: String {
-        let windSpeed = Int.random(in: 0...30)
-        return "\(windSpeed) mi/h"
+        measurementFormatter.formatWindSpeed(dayConditions.windSpeed)
     }
+
+    var lowTemperature: String {
+        measurementFormatter.formatTemperature(dayConditions.temperatureLow)
+    }
+
+    var highTemperature: String {
+        measurementFormatter.formatTemperature(dayConditions.temperatureHigh)
+    }
+    
+    var imageName: String {
+        switch dayConditions.icon {
+        case "clear-day":
+            return "sun.max"
+        case "clear-night":
+            return "moon"
+        case "rain":
+            return "cloud.rain"
+        case "sleet":
+            return "cloud.sleet"
+        case "wind","cloudy", "partly-couldy-day", "partly-couldy-night":
+            return "cloud"
+        default:
+            return "sun.max"
+        }
+    }
+
 
 }

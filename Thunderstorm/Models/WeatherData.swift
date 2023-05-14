@@ -11,13 +11,13 @@ struct WeatherData: Decodable {
     }
 
     let currently: CurrentConditions
-    let forecast: [DailyConditions]
+    let forecast: [DayConditions]
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: RootCodingKeys.self)
         currently = try container.decode(CurrentConditions.self, forKey: .currently)
         let foreCastContiner = try container.nestedContainer(keyedBy: DailyCodingKeys.self, forKey: .daily)
-        forecast = try foreCastContiner.decode([DailyConditions].self, forKey: .data)
+        forecast = try foreCastContiner.decode([DayConditions].self, forKey: .data)
     }
 }
 
@@ -33,7 +33,7 @@ extension WeatherData {
 }
 
 extension WeatherData {
-    struct DailyConditions: Decodable {
+    struct DayConditions: Decodable {
         let time: Date
         let icon: String
         let summary: String

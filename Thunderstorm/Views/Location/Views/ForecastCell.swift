@@ -51,6 +51,6 @@ struct ForecastCell: View {
 
 struct ForecastCell_Previews: PreviewProvider {
     static var previews: some View {
-        ForecastCell(viewModel: .init(forecastDate: Date()))
+        ForecastCell(viewModel: .init(dayConditions: WeatherData.preview.forecast[0]))
     }
 }

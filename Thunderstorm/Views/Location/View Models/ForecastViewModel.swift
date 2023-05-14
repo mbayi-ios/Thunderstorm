@@ -8,10 +8,14 @@
 import Foundation
 
 struct ForecastViewModel {
+
+    private let forecast: [WeatherData.DayConditions]
+
+    init(forecast: [WeatherData.DayConditions]) {
+        self.forecast = forecast
+    }
+
     var forecastCellViewModels: [ForecastCellViewModel] {
-        (0..<10).map { day in
-            let increment = TimeInterval(day) * 24.0 * 3600.0
-            let forecastDate = Date().addingTimeInterval(increment)
-            return ForecastCellViewModel(forecastDate: forecastDate) }
+        forecast.map(ForecastCellViewModel.init(dayConditions: ))
     }
 }
