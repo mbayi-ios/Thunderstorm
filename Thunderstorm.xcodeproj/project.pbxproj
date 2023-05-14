@@ -33,6 +33,7 @@
 		89E8E1AF2A0EAD090044039A /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1AE2A0EAD090044039A /* GeocodingClient.swift */; };
 		89E8E1B12A0EC0060044039A /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1B02A0EC0060044039A /* Geocoder.swift */; };
 		89E8E1B42A0EC14C0044039A /* CLGeocoder+Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1B32A0EC14C0044039A /* CLGeocoder+Geocoder.swift */; };
+		89E8E1B62A10EE1C0044039A /* UserDefaults+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1B52A10EE1C0044039A /* UserDefaults+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		89E8E1AE2A0EAD090044039A /* GeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
 		89E8E1B02A0EC0060044039A /* Geocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
 		89E8E1B32A0EC14C0044039A /* CLGeocoder+Geocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLGeocoder+Geocoder.swift"; sourceTree = "<group>"; };
+		89E8E1B52A10EE1C0044039A /* UserDefaults+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				89E8E1B32A0EC14C0044039A /* CLGeocoder+Geocoder.swift */,
+				89E8E1B52A10EE1C0044039A /* UserDefaults+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E8E1A62A0E9ED90044039A /* AddLocationCell.swift in Sources */,
+				89E8E1B62A10EE1C0044039A /* UserDefaults+Helpers.swift in Sources */,
 				89E8E1AB2A0EAC790044039A /* GeocodingService.swift in Sources */,
 				895CFC6A2A0E30FB00B0499B /* CurrentConditionsViewModel.swift in Sources */,
 				89E8E1A82A0E9EF20044039A /* AddLocationCellViewModel.swift in Sources */,
