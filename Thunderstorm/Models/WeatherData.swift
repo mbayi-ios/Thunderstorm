@@ -37,7 +37,7 @@ extension WeatherData {
         let time: Date
         let icon: String
         let summary: String
-        let windSpeed: String
+        let windSpeed: Float
         let temperatureHigh: Float
         let temperatureLow: Float
     }

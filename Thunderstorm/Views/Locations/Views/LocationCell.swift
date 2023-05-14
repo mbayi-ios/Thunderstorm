@@ -2,7 +2,7 @@ import SwiftUI
 import Foundation
 
 struct LocationCell: View {
-    var viewModel: LocationCellViewModel
+    @ObservedObject var viewModel: LocationCellViewModel
 
     var body: some View {
         HStack {
@@ -44,13 +44,19 @@ struct LocationCell: View {
                 .stroke(Color.gray)
                 .opacity(0.25)
         }
+        .task {
+            await viewModel.start()
+        }
     }
 }
 
 
 struct LocationCell_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = LocationCellViewModel(location: .preview)
+        let viewModel = LocationCellViewModel(
+            location: .preview,
+            weatherService: WeatherPreviewClient()
+        )
         return LocationCell(viewModel: viewModel)
     }
 }

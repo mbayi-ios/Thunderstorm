@@ -5,8 +5,11 @@ import Foundation
 final class LocationsViewModel: ObservableObject {
     private let store: Store
 
-    init(store: Store) {
+    private let weatherService: WeatherService
+
+    init(store: Store, weatherService: WeatherService) {
         self.store = store
+        self.weatherService = weatherService
     }
 
     var title: String {
@@ -23,10 +26,15 @@ final class LocationsViewModel: ObservableObject {
         AddLocationViewModel(geocodingService: GeocodingClient(), store: store)
     }
 
-    func start()
-    {
+    func start(){
+        let weatherService = self.weatherService
+
         store.locationPublisher
-            .map { $0.map(LocationCellViewModel.init(location:))}
+            .map { locations in
+                locations.map { location in
+                    LocationCellViewModel(location: location, weatherService: weatherService)
+                }
+            }
             .eraseToAnyPublisher()
             .assign(to: &$locationCellViewModels)
     }
