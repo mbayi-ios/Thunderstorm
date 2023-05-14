@@ -7,8 +7,7 @@
 <img src="https://github.com/mbayi-ios/Thunderstorm/assets/91916741/9c489109-ee7c-48fd-b9b8-a8c8eec9e2c8" width="50%" />
 
 
-|Screenshots | Screenshots |
-|-------| -------|
-
-|a |a |
-|a |a |
+| screenshots    | screenshots |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
