@@ -10,5 +10,5 @@
 |Screenshots | Screenshots |
 |-------| -------|
 
-|||
-|||
+|a |a |
+|a |a |
