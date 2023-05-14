@@ -2,13 +2,21 @@ import Foundation
 
 final class WeatherClient: WeatherService {
 
-    private let baseURL = URL(string: "https://cocoacasts.com/clearsky")!
+    private let baseURL: URL
+    private let apiKey: String
+
+    init(baseURL: URL = Configuration.clearSKyBaseURL,
+         apiKey: String = Configuration.clearSkyAPIKey
+    ) {
+        self.baseURL = baseURL
+        self.apiKey = apiKey
+    }
 
     func weather(for location: Location) async throws -> WeatherData {
         let queryItems: [URLQueryItem] = [
             .init(name: "lat", value: "\(location.longitude)"),
             .init(name: "long", value: "\(location.longitude)"),
-            .init(name: "api_key", value: "tnperxfip8renk2hlzcccwetbnesby")
+            .init(name: "api_key", value: apiKey)
         ]
 
         let url = baseURL.appending(queryItems: queryItems)

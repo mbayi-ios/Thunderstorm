@@ -43,6 +43,7 @@
 		89E8E1C72A110A650044039A /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1C62A110A650044039A /* WeatherService.swift */; };
 		89E8E1C92A110AA20044039A /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1C82A110AA20044039A /* WeatherClient.swift */; };
 		89E8E1CB2A110BF00044039A /* WeatherPreviewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1CA2A110BF00044039A /* WeatherPreviewClient.swift */; };
+		89E8E1CE2A110EF10044039A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1CD2A110EF10044039A /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,8 @@
 		89E8E1C62A110A650044039A /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		89E8E1C82A110AA20044039A /* WeatherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
 		89E8E1CA2A110BF00044039A /* WeatherPreviewClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPreviewClient.swift; sourceTree = "<group>"; };
+		89E8E1CC2A110EA50044039A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		89E8E1CD2A110EF10044039A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 		895CFC3E2A0D72BC00B0499B /* Thunderstorm */ = {
 			isa = PBXGroup;
 			children = (
+				89E8E1CC2A110EA50044039A /* Info.plist */,
 				89E8E1C52A110A5A0044039A /* Weather */,
 				89E8E1C22A1107B10044039A /* Utilities */,
 				89E8E1B72A1100280044039A /* Store */,
@@ -293,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				89E8E1C32A1107BF0044039A /* ClearSkyDecoder.swift */,
+				89E8E1CD2A110EF10044039A /* Configuration.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -393,6 +398,7 @@
 				895CFC5E2A0D858000B0499B /* LocationCell.swift in Sources */,
 				895CFC542A0D74CF00B0499B /* LocationsView.swift in Sources */,
 				895CFC402A0D72BC00B0499B /* ThunderstormApp.swift in Sources */,
+				89E8E1CE2A110EF10044039A /* Configuration.swift in Sources */,
 				89E8E1C72A110A650044039A /* WeatherService.swift in Sources */,
 				89E8E1B12A0EC0060044039A /* Geocoder.swift in Sources */,
 				89E8E1A42A0E95450044039A /* AddLocationViewModel.swift in Sources */,
@@ -449,6 +455,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLEAR_SKY_API_KEY = tnperxfip8renk2hlzcccwetbnesby;
+				CLEAR_SKY_BASE_URL = "https://cocoacasts.com/clearsky";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -509,6 +517,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLEAR_SKY_API_KEY = tnperxfip8renk2hlzcccwetbnesby;
+				CLEAR_SKY_BASE_URL = "https://cocoacasts.com/clearsky";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -541,6 +551,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Thunderstorm/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Thunderstorm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -569,6 +580,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Thunderstorm/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Thunderstorm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
