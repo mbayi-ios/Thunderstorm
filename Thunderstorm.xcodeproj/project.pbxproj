@@ -37,6 +37,9 @@
 		89E8E1B92A1100370044039A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1B82A1100370044039A /* Store.swift */; };
 		89E8E1BB2A1100BB0044039A /* UserDefaults+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1BA2A1100BB0044039A /* UserDefaults+Store.swift */; };
 		89E8E1BD2A1101390044039A /* PreviewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1BC2A1101390044039A /* PreviewStore.swift */; };
+		89E8E1BF2A1104A10044039A /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1BE2A1104A10044039A /* WeatherData.swift */; };
+		89E8E1C12A1107080044039A /* WeatherData+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1C02A1107080044039A /* WeatherData+Preview.swift */; };
+		89E8E1C42A1107BF0044039A /* ClearSkyDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1C32A1107BF0044039A /* ClearSkyDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +74,9 @@
 		89E8E1B82A1100370044039A /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		89E8E1BA2A1100BB0044039A /* UserDefaults+Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Store.swift"; sourceTree = "<group>"; };
 		89E8E1BC2A1101390044039A /* PreviewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewStore.swift; sourceTree = "<group>"; };
+		89E8E1BE2A1104A10044039A /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		89E8E1C02A1107080044039A /* WeatherData+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherData+Preview.swift"; sourceTree = "<group>"; };
+		89E8E1C32A1107BF0044039A /* ClearSkyDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSkyDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		895CFC3E2A0D72BC00B0499B /* Thunderstorm */ = {
 			isa = PBXGroup;
 			children = (
+				89E8E1C22A1107B10044039A /* Utilities */,
 				89E8E1B72A1100280044039A /* Store */,
 				89E8E1B22A0EC1350044039A /* Extensions */,
 				89E8E1A92A0EAC6A0044039A /* Geocoding */,
@@ -119,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				895CFC462A0D72BD00B0499B /* Preview Assets.xcassets */,
+				89E8E1C02A1107080044039A /* WeatherData+Preview.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -172,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				895CFC592A0D7A9300B0499B /* Location.swift */,
+				89E8E1BE2A1104A10044039A /* WeatherData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,6 +282,14 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		89E8E1C22A1107B10044039A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				89E8E1C32A1107BF0044039A /* ClearSkyDecoder.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,7 +366,9 @@
 				89E8E1AB2A0EAC790044039A /* GeocodingService.swift in Sources */,
 				895CFC6A2A0E30FB00B0499B /* CurrentConditionsViewModel.swift in Sources */,
 				89E8E1A82A0E9EF20044039A /* AddLocationCellViewModel.swift in Sources */,
+				89E8E1C42A1107BF0044039A /* ClearSkyDecoder.swift in Sources */,
 				895CFC742A0E537000B0499B /* Colors.swift in Sources */,
+				89E8E1C12A1107080044039A /* WeatherData+Preview.swift in Sources */,
 				895CFC682A0E30E200B0499B /* CurrentConditionsView.swift in Sources */,
 				89E8E1B92A1100370044039A /* Store.swift in Sources */,
 				89E8E1B42A0EC14C0044039A /* CLGeocoder+Geocoder.swift in Sources */,
@@ -362,6 +381,7 @@
 				89E8E1BD2A1101390044039A /* PreviewStore.swift in Sources */,
 				895CFC5A2A0D7A9300B0499B /* Location.swift in Sources */,
 				895CFC612A0E2FA700B0499B /* LocationView.swift in Sources */,
+				89E8E1BF2A1104A10044039A /* WeatherData.swift in Sources */,
 				89E8E1AD2A0EACC70044039A /* GeocodingPreviewClient.swift in Sources */,
 				89E8E1AF2A0EAD090044039A /* GeocodingClient.swift in Sources */,
 				895CFC572A0D756600B0499B /* LocationsViewModel.swift in Sources */,
