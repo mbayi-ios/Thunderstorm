@@ -35,6 +35,11 @@ internal final class AddLocationViewModel: ObservableObject {
         guard let location = locations.first(where: { $0.id == id}) else {
             return
         }
+        do {
+            try UserDefaults.standard.addLocation(location)
+        } catch {
+            print("unable to add location \(error)")
+        }
     }
 
     private func setupBinding() {
