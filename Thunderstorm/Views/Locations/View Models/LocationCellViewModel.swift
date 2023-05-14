@@ -5,7 +5,7 @@ final class LocationCellViewModel: Identifiable, ObservableObject {
 
     private let location: Location
 
-    private let weaatherService: WeatherService
+    private let weatherService: WeatherService
 
     @Published private var weatherData: WeatherData?
 
@@ -13,12 +13,12 @@ final class LocationCellViewModel: Identifiable, ObservableObject {
 
 
     var locationViewModel: LocationViewModel {
-        .init(location: location)
+        .init(location: location, weatherService: weatherService)
     }
     
     init(location: Location, weatherService: WeatherService) {
         self.location = location
-        self.weaatherService = weatherService
+        self.weatherService = weatherService
     }
 
     var locationName: String {
@@ -50,7 +50,7 @@ final class LocationCellViewModel: Identifiable, ObservableObject {
 
     func start() async {
         do {
-            weatherData = try await weaatherService.weather(for: location)
+            weatherData = try await weatherService.weather(for: location)
         } catch {
             print("unable to fetch weather data for location \(error)")
         }
