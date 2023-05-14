@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-struct Location: Codable {
+struct Location: Codable, Equatable {
     let id: String
     let name: String
     let country: String

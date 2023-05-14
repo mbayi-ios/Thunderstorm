@@ -1,6 +1,6 @@
 import Foundation
 
-struct AddLocationCellViewModel: Identifiable {
+struct AddLocationCellViewModel: Equatable, Identifiable {
     private let location: Location
 
     var id: String {

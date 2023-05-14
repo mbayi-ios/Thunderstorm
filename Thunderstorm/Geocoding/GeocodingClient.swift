@@ -7,7 +7,11 @@ final class GeocodingClient: GeocodingService {
         case requestFailed
     }
 
-    private let geocoder = CLGeocoder()
+    private let geocoder: Geocoder
+
+    init(geocoder: Geocoder = CLGeocoder()) {
+        self.geocoder = geocoder
+    }
 
     func geocodeAddressString(_ addressString: String) async throws -> [Location] {
         guard !addressString.isEmpty else {
