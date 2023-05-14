@@ -45,6 +45,7 @@
 		89E8E1CB2A110BF00044039A /* WeatherPreviewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1CA2A110BF00044039A /* WeatherPreviewClient.swift */; };
 		89E8E1CE2A110EF10044039A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1CD2A110EF10044039A /* Configuration.swift */; };
 		89E8E1D02A111DE60044039A /* clearsky.json in Resources */ = {isa = PBXBuildFile; fileRef = 89E8E1CF2A111DE60044039A /* clearsky.json */; };
+		89E8E1D22A111F5F0044039A /* ClearSkyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1D12A111F5F0044039A /* ClearSkyFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		89E8E1CC2A110EA50044039A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		89E8E1CD2A110EF10044039A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		89E8E1CF2A111DE60044039A /* clearsky.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clearsky.json; sourceTree = "<group>"; };
+		89E8E1D12A111F5F0044039A /* ClearSkyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSkyFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 			children = (
 				89E8E1C32A1107BF0044039A /* ClearSkyDecoder.swift */,
 				89E8E1CD2A110EF10044039A /* Configuration.swift */,
+				89E8E1D12A111F5F0044039A /* ClearSkyFormatter.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				895CFC682A0E30E200B0499B /* CurrentConditionsView.swift in Sources */,
 				89E8E1B92A1100370044039A /* Store.swift in Sources */,
 				89E8E1B42A0EC14C0044039A /* CLGeocoder+Geocoder.swift in Sources */,
+				89E8E1D22A111F5F0044039A /* ClearSkyFormatter.swift in Sources */,
 				895CFC6C2A0E315700B0499B /* ForecastView.swift in Sources */,
 				895CFC5E2A0D858000B0499B /* LocationCell.swift in Sources */,
 				895CFC542A0D74CF00B0499B /* LocationsView.swift in Sources */,

@@ -9,6 +9,8 @@ final class LocationCellViewModel: Identifiable, ObservableObject {
 
     @Published private var weatherData: WeatherData?
 
+    private let measurementFormatter = ClearSkyFormatter()
+
 
     var locationViewModel: LocationViewModel {
         .init(location: location)
@@ -26,7 +28,7 @@ final class LocationCellViewModel: Identifiable, ObservableObject {
         location.country
     }
 
-    private let measurementFormatter: MeasurementFormatter = {
+    /*private let measurementFormatter: MeasurementFormatter = {
         let numberFormatter = NumberFormatter()
         numberFormatter.usesSignificantDigits = false
 
@@ -34,7 +36,7 @@ final class LocationCellViewModel: Identifiable, ObservableObject {
         measurementFormatter.numberFormatter = numberFormatter
 
         return measurementFormatter
-    }()
+    }() */
 
     var summary: String? {
         weatherData?.currently.summary
@@ -45,8 +47,7 @@ final class LocationCellViewModel: Identifiable, ObservableObject {
             return nil
         }
 
-        let measurement = Measurement(value: Double(windSpeed), unit: UnitSpeed.milesPerHour)
-        return measurementFormatter.string(from: measurement)
+        return measurementFormatter.formatWindSpeed(windSpeed)
     }
 
     var temperature: String? {
@@ -54,8 +55,7 @@ final class LocationCellViewModel: Identifiable, ObservableObject {
             return nil
         }
 
-        let measurement = Measurement(value: Double(temperature), unit: UnitTemperature.fahrenheit)
-        return measurementFormatter.string(from: measurement)
+        return measurementFormatter.formatTemperature(temperature)
     }
 
     func start() async {
