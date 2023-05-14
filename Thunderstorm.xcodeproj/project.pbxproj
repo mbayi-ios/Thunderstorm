@@ -46,7 +46,18 @@
 		89E8E1CE2A110EF10044039A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1CD2A110EF10044039A /* Configuration.swift */; };
 		89E8E1D02A111DE60044039A /* clearsky.json in Resources */ = {isa = PBXBuildFile; fileRef = 89E8E1CF2A111DE60044039A /* clearsky.json */; };
 		89E8E1D22A111F5F0044039A /* ClearSkyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1D12A111F5F0044039A /* ClearSkyFormatter.swift */; };
+		89E8E1E22A11250B0044039A /* ClearSkyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8E1E12A11250B0044039A /* ClearSkyFormatterTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89E8E1DB2A1124AB0044039A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 895CFC342A0D72BC00B0499B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 895CFC3B2A0D72BC00B0499B;
+			remoteInfo = Thunderstorm;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		895CFC3C2A0D72BC00B0499B /* Thunderstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunderstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,10 +101,19 @@
 		89E8E1CD2A110EF10044039A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		89E8E1CF2A111DE60044039A /* clearsky.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clearsky.json; sourceTree = "<group>"; };
 		89E8E1D12A111F5F0044039A /* ClearSkyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSkyFormatter.swift; sourceTree = "<group>"; };
+		89E8E1D72A1124AB0044039A /* ThunderstormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThunderstormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E8E1E12A11250B0044039A /* ClearSkyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSkyFormatterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		895CFC392A0D72BC00B0499B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E8E1D42A1124AB0044039A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -107,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				895CFC3E2A0D72BC00B0499B /* Thunderstorm */,
+				89E8E1D82A1124AB0044039A /* ThunderstormTests */,
 				895CFC3D2A0D72BC00B0499B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				895CFC3C2A0D72BC00B0499B /* Thunderstorm.app */,
+				89E8E1D72A1124AB0044039A /* ThunderstormTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,6 +340,22 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
+		89E8E1D82A1124AB0044039A /* ThunderstormTests */ = {
+			isa = PBXGroup;
+			children = (
+				89E8E1E02A1124B60044039A /* Cases */,
+			);
+			path = ThunderstormTests;
+			sourceTree = "<group>";
+		};
+		89E8E1E02A1124B60044039A /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				89E8E1E12A11250B0044039A /* ClearSkyFormatterTests.swift */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +376,24 @@
 			productReference = 895CFC3C2A0D72BC00B0499B /* Thunderstorm.app */;
 			productType = "com.apple.product-type.application";
 		};
+		89E8E1D62A1124AB0044039A /* ThunderstormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E8E1DD2A1124AB0044039A /* Build configuration list for PBXNativeTarget "ThunderstormTests" */;
+			buildPhases = (
+				89E8E1D32A1124AB0044039A /* Sources */,
+				89E8E1D42A1124AB0044039A /* Frameworks */,
+				89E8E1D52A1124AB0044039A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89E8E1DC2A1124AB0044039A /* PBXTargetDependency */,
+			);
+			name = ThunderstormTests;
+			productName = ThunderstormTests;
+			productReference = 89E8E1D72A1124AB0044039A /* ThunderstormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -350,6 +406,11 @@
 				TargetAttributes = {
 					895CFC3B2A0D72BC00B0499B = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					89E8E1D62A1124AB0044039A = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = 895CFC3B2A0D72BC00B0499B;
 					};
 				};
 			};
@@ -367,6 +428,7 @@
 			projectRoot = "";
 			targets = (
 				895CFC3B2A0D72BC00B0499B /* Thunderstorm */,
+				89E8E1D62A1124AB0044039A /* ThunderstormTests */,
 			);
 		};
 /* End PBXProject section */
@@ -379,6 +441,13 @@
 				89E8E1D02A111DE60044039A /* clearsky.json in Resources */,
 				895CFC472A0D72BD00B0499B /* Preview Assets.xcassets in Resources */,
 				895CFC442A0D72BD00B0499B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E8E1D52A1124AB0044039A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +497,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		89E8E1D32A1124AB0044039A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E8E1E22A11250B0044039A /* ClearSkyFormatterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89E8E1DC2A1124AB0044039A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 895CFC3B2A0D72BC00B0499B /* Thunderstorm */;
+			targetProxy = 89E8E1DB2A1124AB0044039A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		895CFC482A0D72BD00B0499B /* Debug */ = {
@@ -607,6 +692,53 @@
 			};
 			name = Release;
 		};
+		89E8E1DE2A1124AB0044039A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mbayi.ThunderstormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thunderstorm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Thunderstorm";
+			};
+			name = Debug;
+		};
+		89E8E1DF2A1124AB0044039A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mbayi.ThunderstormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thunderstorm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Thunderstorm";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -624,6 +756,15 @@
 			buildConfigurations = (
 				895CFC4B2A0D72BD00B0499B /* Debug */,
 				895CFC4C2A0D72BD00B0499B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89E8E1DD2A1124AB0044039A /* Build configuration list for PBXNativeTarget "ThunderstormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E8E1DE2A1124AB0044039A /* Debug */,
+				89E8E1DF2A1124AB0044039A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

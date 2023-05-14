@@ -28,16 +28,6 @@ final class LocationCellViewModel: Identifiable, ObservableObject {
         location.country
     }
 
-    /*private let measurementFormatter: MeasurementFormatter = {
-        let numberFormatter = NumberFormatter()
-        numberFormatter.usesSignificantDigits = false
-
-        let measurementFormatter = MeasurementFormatter()
-        measurementFormatter.numberFormatter = numberFormatter
-
-        return measurementFormatter
-    }() */
-
     var summary: String? {
         weatherData?.currently.summary
     }
